@@ -13,3 +13,16 @@
 #4. Remove all lines that start with an “a”, no matter if it is in uppercase or lowercase. Safe the result into a new \
 #   file. Use regular expressions to do this.
 #5. How many lines were removed?
+
+#This function will generate a line of 15 random characters. I have used the 'random' command to generate a number from 0 to 32767.\
+#In order to have this correspond to one of the 62 possible characters modulo has been used along with a length variable L.
+
+void randomLine(void)
+{
+  #The size of the group we want to choose from.  
+  DIV = 62
+  
+  #The divisor is used along with modulo to create a random number in the set range from 0 to L - 1.
+  IND = $(($RANDOM % $DIV))
+  
+}
